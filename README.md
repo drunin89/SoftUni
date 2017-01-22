@@ -1,3 +1,3 @@
 # SoftUni
-SoftUni by Svetlin Nakov
+SoftUni by Svetlin Nakov<br>
 Programming with C#

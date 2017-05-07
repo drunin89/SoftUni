@@ -1,0 +1,152 @@
+/*//////Top-Menu and Footer-Menu////////*/
+#menu,
+#menu-footer{
+    margin-top: 20px;
+    z-index: 2147483647
+}
+#menu ul,
+#menu ul li,
+#menu-footer ul,
+#menu-footer ul li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+#menu ul li,
+#menu-footer ul li {
+	position: relative
+}
+#menu ul li a,
+#menu-footer ul li a{
+	display: inline-block;
+	font-size: 18px;
+	color: #333;
+	text-decoration: none;
+	line-height: 33px;
+	padding-bottom: 5px;
+	margin-top: -1px;
+	margin-right: 15px
+}
+#menu ul li a:hover,
+#menu-footer ul li a:hover{
+	color: #777;
+	text-decoration: none;
+}
+#menu li ul,
+#menu-footer li ul{
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	z-index: 1000
+}
+#menu ul li:hover ul,
+#menu-footer ul li:hover ul{
+	display: inline-block
+}
+#menu ul ul,
+#menu-footer ul ul{
+	display: none
+}
+#menu ul li:hover ul,
+#menu-footer ul li:hover ul{
+	display: block
+}
+#menu ul li:hover ul li a,
+#menu-footer ul li:hover ul li a{
+	font-size: 14px;
+	line-height: 20px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#menu ul li:hover ul li a,
+#menu-footer ul li:hover ul li a{
+	width: 250px;
+	padding: 5px;
+}
+#menu .toggle,
+#menu-footer .toggle-footer{
+	display: none;
+	color: #fff;
+	text-align: center;
+	line-height: 33px
+}
+	
+	
+#menu,
+#menu-top-menu.menu li .sub-menu li a,
+#menu-footer,
+#menu-footer-menu.menu li .sub-menu li a{
+    border: 0;
+    background: #251121;
+    padding: 1%;
+}
+#menu-top-menu.menu li:hover .sub-menu li a,
+#menu-footer-menu.menu li:hover .sub-menu li a{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#menu-top-menu.menu a,
+#menu-footer-menu.menu a{
+    color: #E6E6E5;
+}
+
+#menu-footer-menu.menu {
+    margin-left: 12%;
+}
+/*//////Top-Menu and Footer-Menu////////*/
+	
+	
+
+
+@media all and (max-width: 768px) {
+	#content,
+	#sidebar,
+	#sidebar.left-sidebar {
+		width: 100%;
+		padding: 5%
+	}
+
+	#menu label.toggle,
+	#menu-footer label.toggle-footer  {
+		display: block
+	}
+
+	#menu,
+	#menu-footer {
+		background: #777
+	}
+
+	#menu ul,
+	#menu-footer ul {
+		display: none
+	}
+
+	#menu ul ul,
+	#menu-footer ul ul {
+		display: none !important
+	}
+
+	#menu input.toggle:checked + div > ul,
+	#menu-footer input.toggle-footer:checked + div > ul {
+		display: block
+	}
+
+	#menu input.toggle:checked + div > ul li a,
+	#menu-footer input.toggle-footer:checked + div > ul li a{
+		display: inline-block;
+		width: 100%;
+		color: #fff;
+		padding-left: 5%
+	}
+
+	.footer-widget-title {
+		font-size: 0.9em;
+	}
+
+	.left-footer, .middle-footer, .right-footer {
+		width: 88%;
+	}
+}

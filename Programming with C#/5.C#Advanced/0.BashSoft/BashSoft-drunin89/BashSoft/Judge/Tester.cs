@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BashSoft_drunin89
+﻿namespace BashSoft
 {
+    using System;
+    using System.IO;
+
     public static class Tester
     {
         public static void CompareContent(string userOutputPath, string expectedOutputPath)
@@ -60,7 +56,7 @@ namespace BashSoft_drunin89
         {
             hasMismatch = false;
             string output = string.Empty;
-
+                        
             OutputWriter.WriteMessageOnNewLine("Comparing files...");
 
             int minOutputLines = actualOutputLines.Length;
@@ -102,9 +98,5 @@ namespace BashSoft_drunin89
             string finalPath = $"{directoryPath}\\Mismatches.txt";
             return finalPath;
         }
-
-
-
-
     }
 }
